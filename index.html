@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>GTZA Cook</title>
+</head>
+
+<body>
+  <header>
+    <img src="img/logo_gtza.svg" alt="logo de gentuza">
+    <h1>Gentuza Cook</h1>
+    <nav>
+
+      <div id="menuHamburguesa">
+        <div class="menu"></div>
+      </div> 
+
+      <ul class="listaLinks">
+        <li>Prueba de menu</li>
+        <li>Prueba de menu</li>
+        <li>Prueba de menu</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="form">
+      <h2><span class="h2Borde">Agregar Receta</span></h2>
+      <form>
+        <div class="contenedorInput">
+        <label for="name">Nombre del Plato</label>
+        <input type="text" name="name" id="name" placeholder="Nombre del plato">
+        </div>
+        <div id="ingredientList" class="contenedorInput">
+          <label for="ingredientes">Ingredientes</label>
+          <div class="inputsIngredientes">
+            <input type="text" name="ingredientes" class="ingredientes" placeholder="Ingrediente">
+            <button class="inputAgregar">+</button>
+            <div class="empty"></div>
+          </div>
+        </div>
+        <div class="contenedorInput">
+          <label for=pasos>Pasos</label>
+          <textarea name="pasos" id="pasos" placeholder="Pasos" cols="30" rows="10"></textarea>
+        </div>
+        <div class="contenedorInput">
+          <label for="tips">Tips</label>
+          <textarea name="tips" id="tips" placeholder="tips" cols="30" rows="10" ></textarea>
+        </div>
+        <button class="enviar">Enviar</button>
+      </form>
+    </section>
+    
+    <section id="recetasContenedor">
+      <h2><span class="h2Borde">Recetas</span></h2>
+      <div class="paraCentrar">
+      <p id="textoInformativo">Escribe nuevas recetas para poder visualizarlas aqui</p>
+      </div>
+      <div id="recetas">
+      </div>
+    </section>
+  </main>
+  <footer>
+    Gentuza
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
